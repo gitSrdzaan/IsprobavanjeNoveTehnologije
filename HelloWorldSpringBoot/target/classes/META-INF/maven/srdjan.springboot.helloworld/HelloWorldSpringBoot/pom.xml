@@ -1,0 +1,42 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>srdjan.springboot.helloworld</groupId>
+  <artifactId>HelloWorldSpringBoot</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  
+  
+  <!-- parent project/uvezuje se spring boot -->
+  <parent>
+  	<groupId>org.springframework.boot</groupId>
+  	<artifactId>spring-boot-starter-parent</artifactId>
+  	<version>2.1.9.RELEASE</version>
+  	<relativePath/> 
+  </parent>
+  
+  <!-- uvezuje dependency koji govori da je ovo sprignboot aplikacija -->
+  <dependencies>
+  	<dependency>
+  		<groupId>org.springframework.boot</groupId>
+		<artifactId>spring-boot-starter-web</artifactId>
+  	</dependency>
+  	<!-- na kom seerveru, ovdje Tomcat npr. -->
+  	<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
+	</dependency>
+  	
+  	
+  </dependencies>
+  
+  
+  
+  <!-- koja je vrsta jave i vrsta encodinga -->
+  <properties>
+  	<java.version>1.8</java.version>
+  	<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+  </properties>
+  
+</project>
